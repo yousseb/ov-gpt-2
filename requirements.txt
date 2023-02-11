@@ -1,0 +1,7 @@
+openvino==2022.3.0
+openvino-dev[onnx,pytorch]==2022.3.0      # For model optimizer
+transformers==4.26.1
+tokenizers==0.13.2
+requests
+numpy
+tqdm
