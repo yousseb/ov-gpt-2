@@ -43,8 +43,8 @@ jobs:
         mkdir -p model_converter/cache
         echo "What is Deep Learning" | python main.py &
         PID=$!
-        # Wait for 2 seconds
-        sleep 20
+        # Wait for 120 seconds
+        sleep 120
         # Kill it
         kill $PID
 
