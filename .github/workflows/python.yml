@@ -40,4 +40,8 @@ jobs:
       run: |
         source venv/bin/activate
         python main.py -i "Deep Learning" -i "Machine Learning" -i "GPT-2 Model"
+    - name: Test Again - No Download
+      run: |
+        source venv/bin/activate
+        python main.py -i "Deep Learning" -i "Machine Learning" -i "GPT-2 Model"
 
