@@ -39,6 +39,8 @@ jobs:
     - name: Test
       run: |
         source venv/bin/activate
+        which omz_downloader
+        mkdir -p model_converter/cache
         echo "What is Deep Learning" | python main.py &
         PID=$!
         # Wait for 2 seconds
