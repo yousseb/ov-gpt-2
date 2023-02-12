@@ -8,10 +8,13 @@ import logging as log
 import time
 from pathlib import Path
 import numpy as np
+import warnings
 from openvino.runtime import Core, get_version
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 eos_token_id = ""
+
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 class OVGPT2Config:

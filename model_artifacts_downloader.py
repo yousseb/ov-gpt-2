@@ -54,20 +54,20 @@ class ModelArtifactsDownloader:
         precision = 'FP16'
 
         if not Path(path + '/' + model_name).with_suffix('.xml').exists():
-            download_command = f"omz_downloader " \
-                               f"--name {model_name} " \
-                               f"--output_dir {base_model_dir} " \
-                               f"--cache_dir {cache_dir}"
-            log.info(f"Download command: `{download_command}`")
-            log.info(f"Downloading {model_name}... (This may take a few minutes depending on your connection.)")
-            subprocess.run(download_command)
+            # download_command = [f'omz_downloader',
+            #                     f'--name {model_name}',
+            #                     f'--output_dir {base_model_dir}',
+            #                     f'--cache_dir {cache_dir}']
+            # log.info(f"Download command: `{download_command}`")
+            # log.info(f"Downloading {model_name}... (This may take a few minutes depending on your connection.)")
+            # subprocess.run(download_command)
 
             # Convert & Rename layers
             pt_model = GPT2LMHeadModel.from_pretrained('gpt2')
             tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 
             # define path for saving onnx model
-            onnx_path = Path(base_model_dir + '/public/gpt-2/gpt-2.onnx')
+            onnx_path = Path('model/gpt-2.onnx')
             onnx_path.parent.mkdir(exist_ok=True)
 
             # get model onnx config function for output feature format casual-lm
