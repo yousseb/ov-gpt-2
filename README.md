@@ -1,6 +1,7 @@
 # ov-gpt-2
 OpenVino Chat GPT-2 
 
+[![Test](https://github.com/yousseb/ov-gpt-2/actions/workflows/python.yml/badge.svg)](https://github.com/yousseb/ov-gpt-2/actions/workflows/python.yml)
 
 ## Pre-requisites
 1. Python3
