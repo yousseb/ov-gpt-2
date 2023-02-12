@@ -39,12 +39,5 @@ jobs:
     - name: Test
       run: |
         source venv/bin/activate
-        which omz_downloader
-        mkdir -p model_converter/cache
-        echo "What is Deep Learning" | python main.py &
-        PID=$!
-        # Wait for 120 seconds
-        sleep 120
-        # Kill it
-        kill $PID
+        python main.py -i "Deep Learning" -i "Machine Learning" -i "GPT-2 Model"
 
