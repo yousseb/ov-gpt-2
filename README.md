@@ -1,5 +1,5 @@
 # ov-gpt-2 [![Test](https://github.com/yousseb/ov-gpt-2/actions/workflows/python.yml/badge.svg)](https://github.com/yousseb/ov-gpt-2/actions/workflows/python.yml)
-OpenVino Chat GPT-2 
+OpenVino GPT-2 
 
 
 ## Pre-requisites
@@ -7,7 +7,7 @@ OpenVino Chat GPT-2
 2. Decent hardware - for now, we rely only on CPU, but OpenVino can utilze your iGPU if present
 
 ## Installation
-This should work on Window, Linux and macOS
+This should work on Windows, Linux and macOS
 
 1. Create a venv. Follow instructions here to setup and activate the environment https://docs.python.org/3/library/venv.html
 
